@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Happy 9th Anniversary!</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .letter-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .letter-content {
+      background: url('https://www.transparenttextures.com/patterns/old-moon.png') repeat, #f5deb3;
+      padding: 40px;
+      max-width: 700px;
+      max-height: 80vh;
+      overflow-y: auto;
+      color: #2b1a0e;
+      font-family: 'Georgia', serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      border: 10px solid #4b1e1e;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+      white-space: pre-wrap;
+      position: relative;
+    }
+
+    .close-letter-btn {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background: darkred;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .close-letter-btn:hover {
+      background: crimson;
+    }
+  </style>
+</head>
+
+<body class="not-loaded">
+  <div class="night"></div>
+
+  <div class="flowers" id="flowers">
+    <div class="flower flower--1">
+      <div class="flower__leafs flower__leafs--1">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="letter-overlay" id="letterOverlay">
+    <div class="letter-content">
+      <button class="close-letter-btn" onclick="closeLetter()">Close</button>
+      <strong>My love,</strong><br>
+      Ading Maria<br><br>
+      Today marks nine beautiful years since our journey began —<br>
+      nine years of love, laughter, growth, challenges, and moments that shaped us.<br>
+      And even after all this time… I still look at you and fall in love all over again.<br><br>
+      In nine years, we’ve created memories that live deep in my bones —<br>
+      the way your hand fits mine so naturally,<br>
+      the way your voice calms the noise in my world,<br>
+      the way your love makes me feel safe, seen, and deeply cherished.<br><br>
+      But what amazes me most is that…<br>
+      my love for you hasn’t stayed the same — it’s grown.<br>
+      It has deepened with time,<br>
+      softened with forgiveness,<br>
+      and solidified through every ordinary moment we've chosen to stay.<br><br>
+      Because the truth is…<br>
+      we don’t always love each other the same every day.<br>
+      Some days, love feels loud and easy.<br>
+      Some days, love is quiet — hard, even.<br>
+      There are days when we argue,<br>
+      days when pride speaks louder than our hearts.<br>
+      But no matter how heavy the day gets,<br>
+      we always choose each other.<br>
+      And somehow, after every fight,<br>
+      we love each other even deeper.<br><br>
+      You are my greatest comfort.<br>
+      My calm in chaos.<br>
+      My warmest home.<br>
+      My favorite voice in a noisy world.<br>
+      My one true love.<br><br>
+      And after nine years, here’s what I know more than ever:<br>
+      I choose you. Still. Always. Again and again.<br>
+      I’ll keep choosing you — on the soft days,<br>
+      on the stormy days,<br>
+      on the in-between days.<br>
+      And in every lifetime our souls are given the chance,<br>
+      I’ll find you… and I’ll choose you.<br><br>
+      Nine years behind us…<br>
+      and yet it feels like we’re only just beginning.<br>
+      There are still so many memories we’ve yet to create,<br>
+      so many mornings I want to wake up beside you,<br>
+      so many dreams I want to share with only you.<br><br>
+      Thank you for loving me when I least deserved it.<br>
+      Thank you for staying when it would’ve been easier to walk away.<br>
+      Thank you for being my peace, my fire, and my forever.<br><br>
+      <em>Happy 9th Anniversary, my love.</em><br>
+      Here’s to everything we’ve been,<br>
+      everything we are,<br>
+      and everything we’ll still become — together.<br><br>
+      <strong>Ikaw ang pahinga…<br>
+      at sa araw-araw na pag gising ko,<br>
+      ikaw at ikaw pa rin ang pipiliin ko.</strong><br><br>
+      Forever yours,<br>
+      Ading Jap
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script>
+    document.getElementById("flowers").addEventListener("click", function () {
+      document.getElementById("letterOverlay").style.display = "flex";
+    });
+
+    function closeLetter() {
+      document.getElementById("letterOverlay").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
