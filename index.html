@@ -3,14 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Flowers</title>
+  <title>Happy 9th Anniversary!</title>
   <link rel="stylesheet" href="./style.css">
-  <style>
-    .flower__leaf {
-      background-color: crimson !important;
-      background-image: linear-gradient(to top, #8B0000, crimson) !important;
-    }
-  </style>
   <style>
     .letter-overlay {
       display: none;
@@ -24,6 +18,7 @@
       justify-content: center;
       align-items: center;
     }
+
     .letter-content {
       background: url('https://www.transparenttextures.com/patterns/old-moon.png') repeat, #f5deb3;
       padding: 40px;
@@ -40,6 +35,7 @@
       white-space: pre-wrap;
       position: relative;
     }
+
     .close-letter-btn {
       position: absolute;
       top: 30px;
@@ -52,16 +48,40 @@
       font-size: 1rem;
       cursor: pointer;
     }
+
     .close-letter-btn:hover {
       background: crimson;
     }
   </style>
 </head>
 
-<body>
+<body class="not-loaded">
   <div class="night"></div>
+
   <div class="flowers" id="flowers">
-    <!-- Original flower content preserved without any changes -->
+    <div class="flower flower--1">
+      <div class="flower__leafs flower__leafs--1">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+      </div>
+    </div>
   </div>
 
   <div class="letter-overlay" id="letterOverlay">
@@ -128,9 +148,11 @@
     document.getElementById("flowers").addEventListener("click", function () {
       document.getElementById("letterOverlay").style.display = "flex";
     });
+
     function closeLetter() {
       document.getElementById("letterOverlay").style.display = "none";
     }
   </script>
 </body>
+
 </html>
